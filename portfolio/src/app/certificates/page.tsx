@@ -6,7 +6,7 @@ const Certificates = () => {
       <h1 className="text-3xl font-bold mb-4">Certificates & Documents</h1>
 
       <section>
-        <h2 className="text-xl font-semibold">Bachelor's Diploma</h2>
+        <h2 className="text-xl font-semibold">Bachelors Diploma</h2>
         <p className="text-gray-600 dark:text-gray-400 mb-2">
           Issued by Wyden Uniruy University Center (2024).
         </p>

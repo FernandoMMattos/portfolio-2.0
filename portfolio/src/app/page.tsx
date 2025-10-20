@@ -6,7 +6,7 @@ const Home = () => {
       <section className="flex p-8 justify-around items-center">
         <div className="w-1/2 flex flex-col gap-3">
           <h1 className="text-4xl">
-            <strong className="text-(--accent)">Fernando's</strong> portfolio.
+            <strong className="text-(--accent)">Fernando</strong> portfolio.
           </h1>
           <p className="text-xl whitespace-pre-line leading-relaxed;">
             {`Hi, I’m Fernando Mattos
