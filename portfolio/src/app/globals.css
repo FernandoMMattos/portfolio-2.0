@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../fonts/SF-Pro-Display-Regular.otf") format("otf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+  /* 🌑 Dark Mode (default) */
+  --bg: hsl(240 10% 5%);
+
+  --text: hsl(0 0% 93%);
+  --text-secondary: hsl(240 3% 65%);
+
+  --primary: hsl(0 96% 27%);
+  --secondary: hsl(311 63% 22%);
+  --accent: hsl(351 73% 45%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* ☀️ Light Mode */
+    --bg: hsl(0, 0%, 98%);
+
+    --text: hsl(0, 0%, 7%);
+    --text-secondary: hsl(0, 0%, 27%);
+
+    --primary: hsl(352, 81%, 38%);
+    --secondary: hsl(312, 60%, 30%);
+    --accent: hsl(356, 72%, 50%);
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary);
+}
+
+a,
+button {
+  color: var(--accent);
+}
