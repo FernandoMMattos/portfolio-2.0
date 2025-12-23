@@ -13,37 +13,16 @@ const projects = [
     mobileImage: "/projects/cl00things-mobile.png",
     responsive: true,
   },
-  // {
-  //   title: "Tasks Tracker App",
-  //   description:
-  //     "A dashboard built with Next.js and Firebase to manage and filter tasks applications.",
-  //   tech: ["Next.js", "Firebase", "TypeScript"],
-  //   demo: "#",
-  //   github: "https://github.com/f-manfrinm/job-tracker",
-  //   desktopImage: "/projects/taskstracker.png",
-  //   responsive: false,
-  // },
-  // {
-  //   title: "To Do App",
-  //   description: "A simple and clean to do app to track your duties.",
-  //   tech: ["Next.js", "TypeScript", "MongoDB", "Style Components"],
-  //   demo: "https://to-do-list-five-brown-80.vercel.app/login",
-  //   github: "https://github.com/FernandoMMattos/to-do-list",
-  //   desktopImage: "/projects/todo-desktop.png",
-  //   mobileImage: "/projects/todo-mobile.png",
-  //   responsive: true,
-  // },
-  // {
-  //   title: "Melodia",
-  //   description:
-  //     "A Spotify tracker where you can see your favorite songs and artists in a fun and simple way.",
-  //   tech: ["Next.js", "TypeScript", "TailwindCSS"],
-  //   demo: "https://github.com/FernandoMMattos/melodia/blob/main/README.md",
-  //   github: "https://github.com/FernandoMMattos/melodia",
-  //   desktopImage: "/projects/melodia-desktop.png",
-  //   mobileImage: "/projects/melodia-mobile.png",
-  //   responsive: true,
-  // },
+  {
+    title: "Weather App",
+    description:
+      "A simple and fun way to check the weather.",
+    tech: ["Next.js", "TypeScript"],
+    demo: "https://weather-alpha-ashen.vercel.app/",
+    github: "https://github.com/FernandoMMattos/Weather/tree/main/weather",
+    desktopImage: "/projects/weather-desktop.png",
+    responsive: false,
+  },
 ];
 
 const Projects = () => {
