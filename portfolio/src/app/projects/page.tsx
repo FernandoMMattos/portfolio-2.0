@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "cl00things",
+    title: "Cl00things",
     description:
       "A clothing wishlist app where users can save, filter, and organize fashion items.",
     tech: ["React", "Firebase", "TypeScript"],
@@ -15,19 +15,19 @@ const projects = [
   },
   {
     title: "Weather App",
-    description:
-      "A simple and fun way to check the weather.",
+    description: "A simple and fun way to check the weather.",
     tech: ["Next.js", "TypeScript"],
     demo: "https://weather-alpha-ashen.vercel.app/",
     github: "https://github.com/FernandoMMattos/Weather/tree/main/weather",
     desktopImage: "/projects/weather-desktop.png",
+    mobileImage: "",
     responsive: false,
   },
 ];
 
 const Projects = () => {
   return (
-    <main className="max-w-5xl mx-auto p-6">
+    <main className="max-w-5xl mx-auto p-6 flex-grow">
       <h1 className="text-3xl font-bold mb-4">Projects</h1>
 
       <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
@@ -50,7 +50,7 @@ const Projects = () => {
             <div className="flex gap-4 mb-4">
               <div className="flex-1 bg-gray-900 rounded-lg shadow-lg">
                 <div className="bg-gray-800 rounded-t-lg h-6 flex items-center px-3 gap-2">
-                  <span className="w-3 h-3 bg-red-500 rounded-full"></span>
+                  <span className="w-3 h-3 bg-red-500 rounded-full"></span>{" "}
                   <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
                   <span className="w-3 h-3 bg-green-500 rounded-full"></span>
                 </div>
