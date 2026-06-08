@@ -4,21 +4,32 @@ import Link from "next/link";
 import ToggleTheme from "./toggleTheme";
 import { usePathname } from "next/navigation";
 
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/about-me", label: "About Me" },
+  { href: "/projects", label: "Projects" },
+  { href: "/certificates", label: "Certificates" },
+];
+
 const Header = () => {
   const pathname = usePathname();
   return (
-    <header className="flex justify-between items-center p-1 text-2xl font-extrabold border-b-1 select-none">
+    <header className="desktop-only flex justify-between items-center p-1 text-2xl font-extrabold border-b select-none">
       <span>Welcome</span>
-      <nav className="flex justify-around w-7/10">
-        {pathname == "/" ? (
-          <Link href="/about-me">About Me</Link>
-        ) : (
-          <Link href="/">Home</Link>
-        )}
-        <Link href="/projects">Projects</Link>
-        <Link href="/certificates">Certificates</Link>
+      <nav className="flex justify-around flex-1 mx-4">
+        {navLinks.map(({ href, label }) => (
+          <Link
+            key={href}
+            href={href}
+            className={pathname === href ? "underline underline-offset-4" : ""}
+          >
+            {label}
+          </Link>
+        ))}
       </nav>
-      <ToggleTheme />
+      <div>
+        <ToggleTheme />
+      </div>
     </header>
   );
 };

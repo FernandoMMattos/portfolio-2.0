@@ -7,15 +7,14 @@ const AboutMe = () => {
 
       <p className="whitespace-pre-line leading-relaxed text-lg">
         {`Hello once again
-          My name is Fernando Mattos, a Brazilian–Italian Front-End Developer based in Dublin, Ireland.
+          My name is Fernando Mattos, a Full Stack Developer based in Dublin, Ireland.
 
-          I hold a degree in Computer Science (2022–2024) and have completed over 2,000 hours of practical training in modern web technologies such as React, Next.js, TypeScript, and Firebase. My main focus is building clean, responsive, and user-friendly applications.
+          I hold a degree in Computer Science (2022–2024) and have completed over 2,000 hours of practical training in modern web technologies such as React, Next.js, TypeScript, NestJS, Express.js, Node.js. My main focus is building clean, responsive, and user-friendly applications.
 
           Some of my recent projects include:
-          - cl00things → a clothing wishlist app built with React + Firebase.
-          - Job Tracker App → a Next.js dashboard to help users organize job applications.
-          - Melodia → a Spotify info tracker tp help you visualize your most liked songs and artists.
-          - To Do List → a simple and clean to do list.
+          - Dublin Rentals → a website where you can rent and announce houses for rental in Dublin.
+          - cl00things → a clothing wishlist app.
+          - POS System → a recreation of a POS system from the place I used to work.
 
           I’m passionate about combining creativity and logic to deliver digital experiences that are both functional and delightful. I’m currently seeking opportunities to grow as a developer and contribute to impactful projects.
           `}

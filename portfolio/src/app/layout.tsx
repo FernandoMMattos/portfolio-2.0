@@ -3,13 +3,15 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import MobileNav from "@/components/MobileNav";
 
 export const metadata: Metadata = {
-  title: "Fernando's portfolio",
-  description: "",
+  title: "Fernando Mattos — Full Stack Developer",
+  description:
+    "Portfolio of Fernando Mattos, a Full Stack Developer specialising in React, Next.js, TypeScript, NestJS, Express. and Node.js",
 };
 
-export const viewmport: Viewport = {
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
@@ -30,8 +32,11 @@ export default function RootLayout({
           enableSystem={false}
         >
           <Header />
-          {children}
+          <div className="flex flex-col flex-grow pb-20 md:pb-0">
+            {children}
+          </div>
           <Footer />
+          <MobileNav />
         </ThemeProvider>
       </body>
     </html>
